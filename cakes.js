@@ -4,7 +4,7 @@
  * @param {string|number} value Thehvalue of the cookie
  * @param {number} exdays Number of days the cookie should be valid for
  */
-const set = (name, value, exdays) => {
+const set = (name, value, exdays = null) => {
 	if(!exdays) {
 		document.cookie = name + "=" + value + ";path=/"
 		return;
